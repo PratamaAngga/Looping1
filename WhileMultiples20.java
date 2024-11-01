@@ -1,17 +1,18 @@
 import java.util.Scanner;
-public class ForMultiples20 {
+public class WhileMultiples20 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int multiple, sum = 0, counter = 0;
+        int multiple, sum = 0, counter = 0, i = 1;
         double avr;
         System.out.print("Input the multiple: ");
         multiple = sc.nextInt();
 
-        for(int i = 1; i<=50;i++) {
+        while (i<=50) {
             if (i % multiple == 0) {
                 sum= sum + i;
                 counter++;
             }
+            i++;
         }
 
         avr = sum / counter;
