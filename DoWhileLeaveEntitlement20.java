@@ -24,6 +24,11 @@ public class DoWhileLeaveEntitlement20 {
                     System.out.println("You don't have enough leave entitlement! Please enter a valid number!");
                     continue;
                 }
+            } else if (confirmation.equalsIgnoreCase("n")) {
+                System.out.println("No leave taken. Program exiting.");
+                break;
+            } else {
+                System.out.println("Invalid input. Please enter 'y' or 'n'.");
             }
         } while (leaveEntitlement > 0);
 
